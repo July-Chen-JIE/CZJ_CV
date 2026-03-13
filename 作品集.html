@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈宗杰 - 产品经理作品集</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        dark: '#1D2129',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            }
+            .img-zoom {
+                cursor: zoom-in;
+                transition: transform 0.2s ease;
+            }
+            .img-zoom:hover {
+                transform: scale(1.02);
+            }
+            .fade-in {
+                animation: fadeIn 0.6s ease-in-out;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            .section-title {
+                position: relative;
+                display: inline-block;
+            }
+            .section-title::after {
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60px;
+                height: 3px;
+                background-color: #165DFF;
+                border-radius: 2px;
+            }
+            .btn-primary {
+                transition: all 0.3s ease;
+            }
+            .btn-primary:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(22, 93, 255, 0.3);
+            }
+            .skill-bar {
+                transition: width 1.5s ease-in-out;
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-50 text-dark">
+   
+
+    <!-- 英雄区域 -->
+    <section class="py-16 md:py-24 bg-gradient-to-r from-primary to-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-[clamp(2rem,4vw,3rem)] font-bold mb-4">陈宗杰</h1>
+            <h2 class="text-[clamp(1.2rem,3vw,1.8rem)] text-blue-100 mb-6">产品经理</h2>
+            <p class="text-lg text-blue-100 max-w-2xl mx-auto mb-8">
+                2年B/G端产品经验，专注智能无纸化会议系统产品创新，
+                擅长需求分析、产品规划与跨部门协作，推动产品从0到1落地
+            </p>
+
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center section-title">关于我</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="md:col-span-1">
+                        <div class="bg-gray-50 p-5 rounded-lg h-full">
+                            <h3 class="font-semibold text-lg mb-3">基本信息</h3>
+                            <div class="space-y-2 text-gray-700">
+                                <p><span class="font-medium">姓名：</span>陈宗杰</p>
+                                <p><span class="font-medium">电话：</span>18406654953</p>
+                                <p><span class="font-medium">邮箱：</span>18406654953@163.com</p>
+                                <p><span class="font-medium">城市：</span>广州</p>
+                                <p><span class="font-medium">经验：</span>2年产品经理经验</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-2 space-y-4">
+                        <div class="bg-gray-50 p-5 rounded-lg">
+                            <h3 class="font-semibold text-lg mb-3">核心优势</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                    <span>主导智能无纸化会议系统全流程项目管理，从需求分析到产品落地</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                    <span>推动60项定制需求转化为常规功能，降低开发成本30%</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                    <span>完成130+政企项目零失误交付，客户满意度达95%以上</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                                    <span>擅长跨部门协作，提升团队效率200%</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-5 rounded-lg">
+                            <h3 class="font-semibold text-lg mb-3">专业背景</h3>
+                            <p class="text-gray-700 mb-3">
+                                拥有2年B/G端硬件产品管理经验，专注智能无纸化会议系统产品创新。
+                                具备扎实的产品设计、需求分析和项目管理能力，擅长将复杂业务需求转化为
+                                可落地的产品方案。
+                            </p>
+                            <p class="text-gray-700">
+                                注重用户体验和产品价值，通过数据驱动和用户反馈持续优化产品，
+                                助力企业提升会议效率和数字化转型。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心项目：智能无纸化会议系统 -->
+    <section id="project" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center section-title">核心项目</h2>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden card-hover">
+                <div class="p-6 md:p-8">
+                    <h3 class="font-bold text-xl md:text-2xl mb-3">智能无纸化会议系统</h3>
+                    <p class="text-gray-600 text-sm mb-4">2024.05-至今 | 产品经理</p>
+                    
+                    <div class="space-y-6 text-gray-700">
+                        <p>
+                            打造一体化无纸化会议解决方案，覆盖政务/商务高端会议、企事业单位全场景，
+                            实现会前准备-会中管理-会后归档全流程管理，集成AI智能总结、手写批注、涉密管控等核心功能。
+                        </p>
+                        
+                        <div>
+                            <h4 class="font-semibold text-lg mb-3">产品经理工作流程</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h5 class="font-medium text-primary mb-2">需求分析与规划</h5>
+                                    <ul class="list-disc list-inside space-y-1 text-sm">
+                                        <li>深入调研政企客户需求，梳理核心业务场景</li>
+                                        <li>制定产品路线图，明确版本迭代计划</li>
+                                        <li>撰写详细PRD文档，定义功能规格和验收标准</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h5 class="font-medium text-primary mb-2">跨部门协作</h5>
+                                    <ul class="list-disc list-inside space-y-1 text-sm">
+                                        <li>与研发团队紧密配合，确保技术可行性</li>
+                                        <li>协调设计团队，优化用户界面和体验</li>
+                                        <li>与销售、客户成功团队沟通，收集反馈</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h5 class="font-medium text-primary mb-2">项目管理</h5>
+                                    <ul class="list-disc list-inside space-y-1 text-sm">
+                                        <li>制定项目里程碑，跟踪进度和风险</li>
+                                        <li>管理需求变更，确保项目目标达成</li>
+                                        <li>组织产品评审，持续优化产品功能</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h5 class="font-medium text-primary mb-2">用户反馈与迭代</h5>
+                                    <ul class="list-disc list-inside space-y-1 text-sm">
+                                        <li>收集用户使用数据和反馈</li>
+                                        <li>分析产品使用情况，识别改进机会</li>
+                                        <li>推动产品持续迭代，提升用户满意度</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold text-lg mb-2">项目核心成果</h4>
+                            <ul class="list-disc list-inside space-y-1 pl-4">
+                                <li>推动60项高频定制需求转化为常规功能，降低开发成本30%</li>
+                                <li>主导25个核心版本迭代，系统综合评审评分达9.5/10</li>
+                                <li>自研数字化工具，将跨部门协作效率提升200%</li>
+                                <li>完成130+政企定制项目全流程需求管理，实现零重大失误交付</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品方法论 -->
+    <section id="methodology" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center section-title">产品方法论</h2>
+            
+            <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">产品设计方法论</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>以用户为中心的设计思维</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>敏捷开发与迭代优化</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>数据驱动的产品决策</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>价值导向的功能规划</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">用户研究方法</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>用户访谈与需求收集</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>竞品分析与行业研究</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>用户画像与场景构建</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>用户测试与反馈收集</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg card-hover">
+                    <div class="text-primary text-3xl mb-4">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-3">产品迭代流程</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>需求分析与优先级排序</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>原型设计与评审</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>开发与测试</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-arrow-right text-primary mt-1 mr-2"></i>
+                            <span>上线与数据监控</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品原型展示（调整布局：2大图一行2个，6中图一行3个） -->
+    <section id="prototype" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center section-title">产品原型展示</h2>
+            
+            <div class="max-w-6xl mx-auto space-y-6">
+                <!-- 大图区域：一行2个 -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- 大图1：系统管理后台 -->
+                    <div class="rounded-xl shadow-md overflow-hidden card-hover">
+                            <img src="后台门户首页.png" 
+                             alt="无纸化会议系统管理后台" 
+                             class="w-full h-72 object-cover img-zoom"
+                             loading="lazy" onclick="openImageModal(this.src)">
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-semibold text-lg mb-2">系统管理后台</h3>
+                            <p class="text-gray-600 text-sm">管理会议流程、用户权限和系统配置的核心控制台，支持多维度数据统计和分析</p>
+                        </div>
+                    </div>
+                    <!-- 大图2：会议批注功能 -->
+                    <div class="rounded-xl shadow-md overflow-hidden card-hover">
+                        <img src="文件批注.png" 
+                             alt="会议批注与手写功能界面" 
+                             class="w-full h-72 object-cover img-zoom"
+                             loading="lazy" onclick="openImageModal(this.src)">
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-semibold text-lg mb-2">会议批注功能</h3>
+                            <p class="text-gray-600 text-sm">支持实时手写批注、荧光笔标注和多人协作标注，提升会议互动性和效率</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 中图区域：一行3个 -->
+                <div class="grid md:grid-cols-3 gap-4">
+                    <!-- 中图1：AI问答助手 -->
+                    <div class="rounded-lg shadow-sm overflow-hidden card-hover">
+                        <img src="AI问答助手.png" 
+                             alt="AI问答小助手界面" 
+                             class="w-full h-48 object-cover img-zoom"
+                             loading="lazy" onclick="openImageModal(this.src)">
+                        <div class="p-3 bg-gray-50">
+                            <h4 class="font-medium text-sm mb-1">AI问答助手</h4>
+                            <p class="text-gray-600 text-xs">基于会议内容的智能问答系统，快速提取关键信息和决策点</p>
+                        </div>
+                    </div>
+                    <!-- 中图2：会议议题详情 -->
+                    <div class="rounded-lg shadow-sm overflow-hidden card-hover">
+                             <img src="公文模式.png" 
+                             alt="会议公文模式界面" 
+                             class="w-full h-48 object-cover img-zoom"
+                             loading="lazy" onclick="openImageModal(this.src)">
+                        <div class="p-3 bg-gray-50">
+                            <h4 class="font-medium text-sm mb-1">会议公文模式</h4>
+                            <p class="text-gray-600 text-xs">详细展示会议公文模式、相关文件和讨论记录，支持快速导航</p>
+                        </div>
+                    </div>
+                    <!-- 中图3：文件切换导航 -->
+                    <div class="rounded-lg shadow-sm overflow-hidden card-hover">
+                        <img src="文件导航.png" 
+                             alt="文件切换与页面导航界面" 
+                             class="w-full h-48 object-cover img-zoom"
+                             loading="lazy" onclick="openImageModal(this.src)">
+                        <div class="p-3 bg-gray-50">
+                            <h4 class="font-medium text-sm mb-1">文件切换导航</h4>
+                            <p class="text-gray-600 text-xs">直观的文件管理和页面导航系统，支持快速切换和预览</p>
+                        </div>
+                    </div>
+                    <!-- 中图4：信号管理 -->
+                    <div class="rounded-lg shadow-sm overflow-hidden card-hover">
+                        <img src="信号管理.png" 
+                             alt="信号管理界面" 
+                             class="w-full h-48 object-cover img-zoom"
+                             loading="lazy" onclick="openImageModal(this.src)">
+                        <div class="p-3 bg-gray-50">
+                            <h4 class="font-medium text-sm mb-1">信号管理</h4>
+                            <p class="text-gray-600 text-xs">实时监控和管理会议系统信号状态，确保稳定运行</p>
+                        </div>
+                    </div>
+                    <!-- 中图5：页面同步功能流程 -->
+                    <div class="rounded-lg shadow-sm overflow-hidden card-hover">
+                             <img src="页面同步.png" 
+                             alt="页面同步功能流程" 
+                             class="w-full h-48 object-cover img-zoom"
+                             loading="lazy" onclick="openImageModal(this.src)">
+                        <div class="p-3 bg-gray-50">
+                            <h4 class="font-medium text-sm mb-1">页面同步功能</h4>
+                            <p class="text-gray-600 text-xs">实现参会人员页面同步，确保会议流程顺畅和信息一致</p>
+                        </div>
+                    </div>
+                    <!-- 中图6：精简版会议议题详情 -->
+                    <div class="rounded-lg shadow-sm overflow-hidden card-hover">
+                        <img src="产品适老化主页.png" 
+                             alt="精简版会议议题详情" 
+                             class="w-full h-48 object-cover img-zoom"
+                             loading="lazy" onclick="openImageModal(this.src)">
+                        <div class="p-3 bg-gray-50">
+                            <h4 class="font-medium text-sm mb-1">精简版会议议题</h4>
+                            <p class="text-gray-600 text-xs">专注核心内容的精简界面，提升信息获取效率</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- 竞品分析展示 -->
+    <section id="competitive-analysis" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center section-title">竞品分析能力</h2>
+            
+            <div class="max-w-6xl mx-auto space-y-8">
+                <p class="text-gray-700 text-center max-w-3xl mx-auto">
+                    拥有丰富的竞品分析经验，已完成40+份竞品分析文档，涵盖市场定位、产品功能、技术特性等多个维度，
+                    为产品决策提供数据支持和战略参考。
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- 竞品分析案例1 -->
+                    <div class="bg-gray-50 p-4 rounded-lg card-hover">
+                        <h3 class="font-bold text-lg mb-3">竞品分析案例1</h3>
+                        <div class="space-y-3">
+                            <div class="rounded-lg overflow-hidden">
+                                <img src="竞品分析1.png" 
+                                     alt="竞品分析案例1" 
+                                     class="w-full h-40 object-cover img-zoom"
+                                     loading="lazy" onclick="openImageModal(this.src)">
+                            </div>
+                            <div class="space-y-2 text-gray-700 text-sm">
+                                <p><span class="font-medium">分析内容：</span>智能耳机竞品对比分析</p>
+                                <p><span class="font-medium">分析维度：</span>产品功能、市场定位、用户体验</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 竞品分析案例2 -->
+                    <div class="bg-gray-50 p-4 rounded-lg card-hover">
+                        <h3 class="font-bold text-lg mb-3">竞品分析案例2</h3>
+                        <div class="space-y-3">
+                            <div class="rounded-lg overflow-hidden">
+                                <img src="竞品分析2.png" 
+                                     alt="竞品分析案例2" 
+                                     class="w-full h-40 object-cover img-zoom"
+                                     loading="lazy" onclick="openImageModal(this.src)">
+                            </div>
+                            <div class="space-y-2 text-gray-700 text-sm">
+                                <p><span class="font-medium">分析内容：</span>竞争对手产品功能对比</p>
+                                <p><span class="font-medium">分析维度：</span>功能特性、技术架构、价格策略</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 竞品分析案例3 -->
+                    <div class="bg-gray-50 p-4 rounded-lg card-hover">
+                        <h3 class="font-bold text-lg mb-3">竞品分析案例3</h3>
+                        <div class="space-y-3">
+                            <div class="rounded-lg overflow-hidden">
+                                <img src="竞品分析3.png" 
+                                     alt="竞品分析案例3" 
+                                     class="w-full h-40 object-cover img-zoom"
+                                     loading="lazy" onclick="openImageModal(this.src)">
+                            </div>
+                            <div class="space-y-2 text-gray-700 text-sm">
+                                <p><span class="font-medium">分析内容：</span>市场份额与发展趋势分析</p>
+                                <p><span class="font-medium">分析维度：</span>市场占有率、用户口碑、产品迭代</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-lg mb-4">竞品分析方法论</h3>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-primary">市场分析</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>市场规模与增长趋势</li>
+                                <li>目标用户群体分析</li>
+                                <li>价格区间与定位</li>
+                                <li>销售渠道分布</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-primary">产品分析</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>核心功能对比</li>
+                                <li>技术特性分析</li>
+                                <li>用户体验评估</li>
+                                <li>迭代速度与方向</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="font-medium text-primary">战略分析</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>优劣势对比</li>
+                                <li>机会与威胁识别</li>
+                                <li>差异化策略制定</li>
+                                <li>市场进入建议</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据统计 -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold mb-12 text-center">产品成果</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                <div class="p-6 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                    <div class="text-4xl font-bold mb-2">2</div>
+                    <div class="text-blue-100">年产品经验</div>
+                </div>
+                <div class="p-6 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                    <div class="text-4xl font-bold mb-2">30+</div>
+                    <div class="text-blue-100">核心项目</div>
+                </div>
+                <div class="p-6 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                    <div class="text-4xl font-bold mb-2">130+</div>
+                    <div class="text-blue-100">政企项目交付</div>
+                </div>
+                <div class="p-6 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                    <div class="text-4xl font-bold mb-2">40+</div>
+                    <div class="text-blue-100">竞品分析文档</div>
+                </div>
+                <div class="p-6 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                    <div class="text-4xl font-bold mb-2">200%</div>
+                    <div class="text-blue-100">协作效率提升</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 图片预览模态框 -->
+    <div id="imageModal" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4" onclick="closeImageModal()">
+        <button class="absolute top-6 right-6 text-white text-3xl" onclick="closeImageModal()">
+            <i class="fas fa-times"></i>
+        </button>
+        <img id="modalImage" src="" alt="预览大图" class="max-w-full max-h-[90vh] rounded-lg">
+    </div>
+
+    <script>
+        // 移动端菜单切换
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    mobileMenu.classList.add('hidden');
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 图片预览模态框功能
+        const imageModal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+
+        function openImageModal(src) {
+            modalImage.src = src;
+            imageModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeImageModal() {
+            imageModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // 键盘ESC关闭预览
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeImageModal();
+            }
+        });
+    </script>
+</body>
+</html>
